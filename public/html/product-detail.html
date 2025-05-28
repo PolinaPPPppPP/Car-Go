@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шуба из норки классическая | Дорого Красиво</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/product-detail.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__city">
+                    <span class="city-name">Иркутск</span>
+                    <span class="phone">8 (800) 123-45-67</span>
+                </div>
+                <div class="header__auth">
+                    <a href="/public/html/favorites.html" class="auth-link"><i class="far fa-heart"></i> Избранное</a>
+                    <a href="/public/html/login.html" class="auth-link"><i class="far fa-user"></i> Вход</a>
+                    <a href="/public/html/cart.html" class="auth-link cart-link"><i class="fas fa-shopping-cart"></i> Корзина <span class="cart-count">0</span></a>
+                </div>
+            </div> 
+            <div class="header__main">
+              <div class="header__logo">
+                <a href="/public/html/index.html" class="logo-link">
+                    <img src="/public/img/Frame 16.svg" alt="Логотип Дорого Красиво" class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-brand">Д&К</span>
+                        <span class="logo-slogan">Дорого Красиво</span>
+                    </div>
+                </a>
+            </div>
+              <nav class="header__nav">
+                <ul>
+                  <li><a href="/public/html/women-catalog.html">Женщины</a></li>
+                  <li><a href="#">Мужчины</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="/public/html/index.html">Главная</a>
+            <span> / </span>
+            <a href="/public/html/women-catalog.html">Женские шубы</a>
+            <span> / </span>
+            <span>Шуба из норки классическая</span>
+        </div>
+    </div>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <div class="container">
+            <!-- Основная информация о товаре -->
+            <section class="product-main">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="/public/img/women-2-large.webp" alt="Шуба из норки классическая" id="main-product-image">
+                        <button class="zoom-btn" onclick="openImageModal()">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </div>
+                    <div class="thumbnails">
+                        <div class="thumbnail active" onclick="changeMainImage('/public/img/products/women-2-large.jpg')">
+                            <img src="/public/img/women-2-thumb1.webp" alt="Шуба из норки - вид 1">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/public/img/products/women-2-large2.jpg')">
+                            <img src="/public/img/women-2-thumb2.webp" alt="Шуба из норки - вид 2">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/public/img/products/women-2-large3.jpg')">
+                            <img src="/public/img/women-2-thumb3.webp" alt="Шуба из норки - вид 3">
+                        </div>
+                        <div class="thumbnail" onclick="changeMainImage('/public/img/products/women-2-large4.jpg')">
+                            <img src="/public/img/women-2-thumb4.webp" alt="Шуба из норки - вид 4">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1 class="product-title">Шуба из норки классическая</h1>
+                    <div class="product-sku">Артикул: NK-2023-45</div>
+                    
+                    <div class="product-prices">
+                        <div class="current-price">89 990 ₽</div>
+                        <div class="old-price">109 990 ₽</div>
+                        <div class="discount-badge">-18%</div>
+                    </div>
+                    
+                    <div class="product-colors">
+                        <span class="color-label">Цвет:</span>
+                        <div class="color-options">
+                            <div class="color-option active" style="background-color: #964B00;" title="Коричневый"></div>
+                            <div class="color-option" style="background-color: #000;" title="Черный"></div>
+                            <div class="color-option" style="background-color: #C0C0C0;" title="Серебристый"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-sizes">
+                        <span class="sizes-label">Размеры:</span>
+                        <div class="size-options">
+                            <label class="size-option">
+                                <input type="radio" name="size" value="42" checked>
+                                <span class="size-box">42</span>
+                            </label>
+                            <label class="size-option">
+                                <input type="radio" name="size" value="44">
+                                <span class="size-box">44</span>
+                            </label>
+                            <label class="size-option">
+                                <input type="radio" name="size" value="46">
+                                <span class="size-box">46</span>
+                            </label>
+                            <label class="size-option">
+                                <input type="radio" name="size" value="48">
+                                <span class="size-box">48</span>
+                            </label>
+                            <label class="size-option unavailable">
+                                <input type="radio" name="size" value="50" disabled>
+                                <span class="size-box">50</span>
+                            </label>
+                        </div>
+                        <!-- Кнопка - сделаем ее более заметной -->
+<button class="size-table-btn">
+    <i class="fas fa-ruler"></i> Таблица размеров
+  </button>
+  
+  <!-- Модальное окно -->
+  <div class="size-table-modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="/public/img/sizewomen.jpg" alt="Таблица размеров" class="size-chart-img">
+    </div>
+  </div>
+   
+                    <div class="product-actions">
+                        <button class="add-to-cart">Добавить в корзину</button>
+                        <button class="add-to-favorites">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-delivery">
+                        <div class="delivery-option">
+                            <i class="fas fa-truck"></i>
+                            <span>Доставка по России от 3 дней</span>
+                        </div>
+                        <div class="delivery-option">
+                            <i class="fas fa-store"></i>
+                            <span>Примерка в магазине</span>
+                        </div>
+                        <div class="delivery-option">
+                            <i class="fas fa-undo"></i>
+                            <span>Возврат в течение 14 дней</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Характеристики товара -->
+            <section class="product-specs">
+                <h2 class="section-title">Характеристики</h2>
+                <table class="specs-table">
+                    <tr>
+                        <td class="spec-name">Материал</td>
+                        <td class="spec-value">Натуральный мех норки</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Сезон</td>
+                        <td class="spec-value">Зима (до -25°C)</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Силуэт</td>
+                        <td class="spec-value">Прямой</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Застежка</td>
+                        <td class="spec-value">Пуговицы</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Отделка</td>
+                        <td class="spec-value">Кожаные элементы</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Длина</td>
+                        <td class="spec-value">Средняя (до колен)</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Цвет</td>
+                        <td class="spec-value">Коричневый</td>
+                    </tr>
+                    <tr>
+                        <td class="spec-name">Страна производства</td>
+                        <td class="spec-value">Россия</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Описание товара -->
+            <section class="product-description">
+                <h2 class="section-title">Описание</h2>
+                <div class="description-content">
+                    <p>Элегантная шуба из натурального меха норки классического кроя. Идеальный выбор для холодной зимы, сочетает в себе тепло, комфорт и стиль.</p>
+                    <p>Особенности:</p>
+                    <ul>
+                        <li>Плотный качественный мех</li>
+                        <li>Удобная посадка по фигуре</li>
+                        <li>Прочная фурнитура</li>
+                        <li>Внутренняя подкладка из сатина</li>
+                        <li>Два боковых кармана</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Отзывы -->
+            <section class="product-reviews">
+                <div class="reviews-header">
+                    <h2 class="section-title">Отзывы</h2>
+                    <div class="reviews-stats">
+                        <div class="rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="average">4.2</span>
+                            <span class="count">(15 отзывов)</span>
+                        </div>
+                        <button class="add-review-btn" onclick="openReviewForm()">Написать отзыв</button>
+                    </div>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="review-author">Анна К.</span>
+                            <span class="review-date">15.02.2023</span>
+                            <span class="review-rating">★★★★★</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Шуба просто великолепная! Мех очень густой и блестящий, сидит идеально. Носила всю зиму - очень теплая. Доставка быстрая, упаковано аккуратно.</p>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-header">
+                            <span class="review-author">Марина С.</span>
+                            <span class="review-date">03.01.2023</span>
+                            <span class="review-rating">★★★★☆</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Качество на высоте, но размер оказался немного маловат. Пришлось обменять на размер больше. Спасибо за быстрый обмен!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="show-more-reviews">Показать еще отзывы</button>
+            </section>
+
+            <!-- Похожие товары -->
+<section class="similar-products">
+    <h2 class="section-title">Похожие товары</h2>
+    <div class="carousel-container">
+        <div class="similar-products-grid">
+            <!-- Товар 1 -->
+            <div class="similar-product">
+                <a href="/product-detail.html" class="product-link">
+                    <div class="product-image-container">
+                        <img src="/public/img/similar-1.webp" alt="Шуба из аукционного меха норки SAGA FURS" class="product-image">
+                    </div>
+                    <h3 class="product-title">Шуба из аукционного меха норки SAGA FURS</h3>
+                    <div class="product-prices">
+                        <span class="current-price">89 990 ₽</span>
+                        <span class="old-price">109 990 ₽</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Товар 2 -->
+            <div class="similar-product">
+                <a href="/product-detail.html" class="product-link">
+                    <div class="product-image-container">
+                        <img src="/public/img/similar-2.webp" alt="Шуба из аукционного меха норки KOPENGAGEN FUR BURGUNDY" class="product-image">
+                    </div>
+                    <h3 class="product-title">Шуба из аукционного меха норки KOPENGAGEN FUR BURGUNDY</h3>
+                    <div class="product-prices">
+                        <span class="current-price">239 990 ₽</span>
+                        <span class="old-price">429 990 ₽</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Товар 3 -->
+            <div class="similar-product">
+                <a href="/product-detail.html" class="product-link">
+                    <div class="product-image-container">
+                        <img src="/public/img/similar-3.webp" alt="Шуба из аукционного меха норки SAGA FURS" class="product-image">
+                    </div>
+                    <h3 class="product-title">Шуба из аукционного меха норки SAGA FURS</h3>
+                    <div class="product-prices">
+                        <span class="current-price">409 990 ₽</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Товар 4 -->
+            <div class="similar-product">
+                <a href="/product-detail.html" class="product-link">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('/public/img/similar-3.webp')"></div>
+                    </div>
+                    <h3 class="product-title">Шуба из аукционного меха норки SAGA FURS</h3>
+                    <div class="product-prices">
+                        <span class="current-price">78 990 ₽</span>
+                        <span class="old-price">99 990 ₽</span>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Товар 5 -->
+            <div class="similar-product">
+                <a href="/product-detail.html" class="product-link">
+                    <div class="product-image-container">
+                        <div class="product-image" style="background-image: url('/public/img/products/women-5.jpg')"></div>
+                    </div>
+                    <h3 class="product-title">Шуба из норки длинная</h3>
+                    <div class="product-prices">
+                        <span class="current-price">112 990 ₽</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <button class="carousel-btn prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+        </div>
+    </main>
+
+    <!-- Модальное окно для отзыва -->
+    <div class="modal review-modal" id="reviewModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('reviewModal')">&times;</span>
+            <h2>Оставить отзыв</h2>
+            <form id="reviewForm">
+                <div class="form-group">
+                    <label for="reviewName">Ваше имя</label>
+                    <input type="text" id="reviewName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reviewRating">Оценка</label>
+                    <div class="rating-select">
+                        <span onclick="setRating(1)">☆</span>
+                        <span onclick="setRating(2)">☆</span>
+                        <span onclick="setRating(3)">☆</span>
+                        <span onclick="setRating(4)">☆</span>
+                        <span onclick="setRating(5)">☆</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reviewText">Отзыв</label>
+                    <textarea id="reviewText" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-review">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно для увеличенного изображения -->
+    <div class="modal image-modal" id="imageModal">
+        <span class="close-modal" onclick="closeModal('imageModal')">&times;</span>
+        <div class="modal-image-container">
+            <img src="" alt="" id="modalImage">
+            <button class="nav-btn prev-btn" onclick="navigateImage(-1)">&#10094;</button>
+            <button class="nav-btn next-btn" onclick="navigateImage(1)">&#10095;</button>
+        </div>
+        <div class="image-counter">
+            <span id="currentImage">1</span> / <span id="totalImages">4</span>
+        </div>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <!-- Женщинам -->
+            <div class="footer__section">
+              <h3 class="footer__title">Женщинам</h3>
+              <ul class="footer__list">
+                <li><a href="#">Шубы из меха норки</a></li>
+                <li><a href="#">Шубы из овчины</a></li>
+                <li><a href="#">Экошубы</a></li>
+              </ul>
+            </div>
+            
+            <!-- Мужчинам -->
+            <div class="footer__section">
+              <h3 class="footer__title">Мужчинам</h3>
+              <ul class="footer__list">
+                <li><a href="#">Дублёнки</a></li>
+                <li><a href="#">Кожаные куртки</a></li>
+                <li><a href="#">Пуховики</a></li>
+              </ul>
+            </div>
+            
+            <!-- Компания -->
+            <div class="footer__section">
+              <h3 class="footer__title">Компания</h3>
+              <ul class="footer__list">
+                <li><a href="/public/html/about-page.html">О компании</a></li>
+                <li><a href="/public/html/contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            
+            <!-- Плюсы -->
+            <div class="footer__section">
+              <h3 class="footer__title">Плюсы</h3>
+              <ul class="footer__list">
+                <li><a href="#">Распродажа</a></li>
+                <li><a href="/public/html/favorites.html">Избранное</a></li>
+                <li><a href="/public/html/login.html">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              © 2016–2025 «D&K»<br>
+              <span class="footer__note">[Политика конфиденциальности]</span>
+              <div class="social-media">
+                  <h4>Мы в соцсетях</h4>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                      <a href="#"><i class="fab fa-viber"></i></a>
+                      <a href="#"><i class="fab fa-pinterest"></i></a>
+                      <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                  </div>
+              </div>
+          </div>
+
+            <div class="footer__contacts">
+              <div class="footer__phone">8 (800) 600-46-46<br>
+              <span>Бесплатно по России</span></div>
+              
+              <div class="footer__email">
+                <strong>DorogoKrasivo@gmail.com</strong><br>
+                <span>По всем вопросам</span>
+              </div>
+            </div>
+            
+            <div class="footer__legal">
+              <p><strong>Примечание:</strong></p>
+              <ul class="footer__legal-list">
+                  <li>Оплата банковскими картами осуществляется через АО "Альфа-Банк".</li>
+                  <li>К оплате принимаются карты Платженая система "Мир".</li>
+              </ul>
+              <div class="payment-methods">
+                  <p>Принимаем к оплате:</p>
+                  <div class="payment-icons">
+                      <img src="/public/img/sber.jpg" alt="Cбербанк">
+                      <img src="/public/img/SPB.jpg" alt="СБП">
+                      <img src="/public/img/mir.jpg" alt="МИР">
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- Скрипты -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/public/java/product-detail.js"></script>
+</body>
+</html>

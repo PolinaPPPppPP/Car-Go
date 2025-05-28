@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа | Дорого Красиво</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/order.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__city">
+                    <span class="city-name">Иркутск</span>
+                    <span class="phone">8 (800) 123-45-67</span>
+                </div>
+                <div class="header__auth">
+                    <a href="/public/html/favorites.html" class="auth-link"><i class="far fa-heart"></i> Избранное</a>
+                    <a href="/public/html/login.html" class="auth-link"><i class="far fa-user"></i> Вход</a>
+                    <a href="/public/html/cart.html" class="auth-link cart-link"><i class="fas fa-shopping-cart"></i> Корзина <span class="cart-count">0</span></a>
+                </div>
+            </div> 
+            <div class="header__main">
+              <div class="header__logo">
+                <a href="/public/html/index.html" class="logo-link">
+                    <img src="/public/img/Frame 16.svg" alt="Логотип Дорого Красиво" class="logo-image">
+                    <div class="logo-text">
+                        <span class="logo-brand">Д&К</span>
+                        <span class="logo-slogan">Дорого Красиво</span>
+                    </div>
+                </a>
+            </div>
+              <nav class="header__nav">
+                <ul>
+                  <li><a href="/public/html/women-catalog.html">Женщины</a></li>
+                  <li><a href="/public/html/men-catalog.html">Мужчины</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <div class="container">
+            <div class="order-steps">
+                <div class="step active">1. Оформление</div>
+                <div class="step">2. Оплата</div>
+                <div class="step">3. Подтверждение</div>
+            </div>
+
+            <div class="order-grid">
+                <!-- Левая колонка - товары и доставка -->
+                <div class="order-column">
+                    <section class="order-section">
+                        <h2 class="section-title">Ваш заказ</h2>
+                        <div class="order-items">
+                            <!-- Товар 1 -->
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="/public/img/products/women-3.jpg" alt="Дубленка из овчины">
+                                </div>
+                                <div class="item-details">
+                                    <h3 class="item-title">Дубленка из овчины</h3>
+                                    <div class="item-meta">
+                                        <span class="item-sku">Артикул: 750960003</span>
+                                        <span class="item-size">Размер: 48</span>
+                                    </div>
+                                    <div class="item-warehouse">Склад: Иркутск</div>
+                                </div>
+                                <div class="item-price">
+                                    <div class="current-price">39 990 ₽</div>
+                                    <div class="old-price">89 990 ₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="order-section">
+                        <h2 class="section-title">Доставка</h2>
+                        <div class="delivery-options">
+                            <div class="delivery-option active">
+                                <input type="radio" name="delivery" id="courier" checked>
+                                <label for="courier">
+                                    <i class="fas fa-truck"></i>
+                                    <span class="option-title">Курьером</span>
+                                    <span class="option-price">500₽</span>
+                                    <span class="option-desc">Доставка 1-3 дня</span>
+                                </label>
+                            </div>
+                            <div class="delivery-option">
+                                <input type="radio" name="delivery" id="pickup">
+                                <label for="pickup">
+                                    <i class="fas fa-store"></i>
+                                    <span class="option-title">Самовывоз</span>
+                                    <span class="option-price">Бесплатно</span>
+                                    <span class="option-desc">Из магазина в Иркутске</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="delivery-form">
+                            <div class="form-group">
+                                <label for="address">Адрес доставки</label>
+                                <input type="text" id="address" placeholder="Город, улица, дом, квартира">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Дата доставки</label>
+                                    <input type="date" id="date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Временной интервал</label>
+                                    <select id="time">
+                                        <option>9:00 - 13:00</option>
+                                        <option>13:00 - 18:00</option>
+                                        <option>18:00 - 22:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Правая колонка - итоги и оплата -->
+                <div class="order-column">
+                    <section class="order-summary">
+                        <h2 class="section-title">Итого</h2>
+                        <div class="summary-row">
+                            <span>Товары (1)</span>
+                            <span>39 990 ₽</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Доставка</span>
+                            <span>500₽</span>
+                        </div>
+                        <div class="summary-row discount">
+                            <span>Скидка</span>
+                            <span>-50 000 ₽</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>К оплате</span>
+                            <span class="total-price">40 490 ₽</span>
+                        </div>
+                        <div class="bonus-info">
+                            <i class="fas fa-gift"></i>
+                            <span>Вы получите 404 бонусных балла</span>
+                        </div>
+                        <button class="checkout-btn" onclick="location.href='/public/html/payment.html'">Перейти к оплате</button>
+                    </section>
+
+                    <section class="payment-methods-preview">
+                        <h3 class="section-subtitle">Способы оплаты</h3>
+                        <div class="payment-icons">
+                            <img src="/public/img/sber.jpg" alt="Cбербанк">
+                            <img src="/public/img/mir.jpg" alt="МИР">
+                            <img src="/public/img/SPB.jpg" alt="СБП">
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <!-- Женщинам -->
+            <div class="footer__section">
+              <h3 class="footer__title">Женщинам</h3>
+              <ul class="footer__list">
+                <li><a href="#">Шубы из меха норки</a></li>
+                <li><a href="#">Шубы из овчины</a></li>
+                <li><a href="#">Экошубы</a></li>
+              </ul>
+            </div>
+            
+            <!-- Мужчинам -->
+            <div class="footer__section">
+              <h3 class="footer__title">Мужчинам</h3>
+              <ul class="footer__list">
+                <li><a href="#">Дублёнки</a></li>
+                <li><a href="#">Кожаные куртки</a></li>
+                <li><a href="#">Пуховики</a></li>
+              </ul>
+            </div>
+            
+            <!-- Компания -->
+            <div class="footer__section">
+              <h3 class="footer__title">Компания</h3>
+              <ul class="footer__list">
+                <li><a href="about-page.html">О компании</a></li>
+                <li><a href="/public/html/contacts.html">Контакты</a></li>
+              </ul>
+            </div>
+            
+            <!-- Плюсы -->
+            <div class="footer__section">
+              <h3 class="footer__title">Плюсы</h3>
+              <ul class="footer__list">
+                <li><a href="#">Распродажа</a></li>
+                <li><a href="/public/html/favorites.html">Избранное</a></li>
+                <li><a href="/public/html/login.html">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              © 2016–2025 «D&K»<br>
+              <span class="footer__note">[Политика конфиденциальности]</span>
+              <div class="social-media">
+                  <h4>Мы в соцсетях</h4>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-vk"></i></a>
+                      <a href="#"><i class="fab fa-viber"></i></a>
+                      <a href="#"><i class="fab fa-pinterest"></i></a>
+                      <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                  </div>
+              </div>
+          </div>
+
+            <div class="footer__contacts">
+              <div class="footer__phone">8 (800) 600-46-46<br>
+              <span>Бесплатно по России</span></div>
+              
+              <div class="footer__email">
+                <strong>DorogoKrasivo@gmail.com</strong><br>
+                <span>По всем вопросам</span>
+              </div>
+            </div>
+            
+            <div class="footer__legal">
+              <p><strong>Примечание:</strong></p>
+              <ul class="footer__legal-list">
+                  <li>Оплата банковскими картами осуществляется через АО "Альфа-Банк".</li>
+                  <li>К оплате принимаются карты Платженая система "Мир".</li>
+              </ul>
+              <div class="payment-methods">
+                  <p>Принимаем к оплате:</p>
+                  <div class="payment-icons">
+                      <img src="/public/img/sber.jpg" alt="Cбербанк">
+                      <img src="/public/img/SPB.jpg" alt="СБП">
+                      <img src="/public/img/mir.jpg" alt="МИР">
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

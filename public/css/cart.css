@@ -1,0 +1,224 @@
+/* Базовые стили */
+:root {
+    --primary: #8b4513;
+    --secondary: #c1aeae;
+    --dark: #222;
+    --light: #f9f9f9;
+    --white: #fff;
+    --gray: #e0e0e0;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--light);
+    padding: 20px;
+}
+
+/* Контейнер */
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+    margin-bottom: 30px;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs li {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs li:last-child {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.breadcrumbs a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.breadcrumbs .fa-chevron-right {
+    font-size: 10px;
+    color: #999;
+    margin: 0 5px;
+}
+
+/* Пустая корзина */
+.empty-cart {
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.empty-cart h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.empty-cart p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary);
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.catalog-btn:hover {
+    background: #7a3a10;
+}
+
+/* Быстрые ссылки */
+.quick-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.links-section {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.links-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--dark);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.links-section ul {
+    list-style: none;
+}
+
+.links-section li {
+    margin-bottom: 8px;
+}
+
+.links-section a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 14px;
+}
+
+.links-section a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* Футер с контактами */
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--gray);
+    margin-top: 30px;
+}
+
+.contacts .phone {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contacts .phone-note {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.contacts .email {
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.contacts .email-note {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .empty-cart {
+        padding: 30px 15px;
+    }
+    
+    .empty-cart h1 {
+        font-size: 24px;
+    }
+    
+    .breadcrumbs {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,47 @@
+.scrollArea {
+    background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .navbarBox {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4px);
+  }
+  
+  .navLinkRoot {
+    border-radius: var(--mantine-radius-md);
+    margin-bottom: rem(4px);
+    transition: all 0.2s ease;
+  }
+  
+  .navLink {
+    font-weight: 500;
+    font-size: var(--mantine-font-size-sm);
+    padding: rem(10px) rem(12px);
+    
+    &:hover {
+      background-color: var(--mantine-color-primary-0);
+      color: var(--mantine-color-primary-7);
+      transform: translateX(rem(3px));
+    }
+    
+    &[data-active] {
+      background-color: var(--mantine-color-primary-1);
+      color: var(--mantine-color-primary-7);
+      font-weight: 600;
+      border-left: rem(3px) solid var(--mantine-color-primary-5);
+      
+      &:hover {
+        background-color: var(--mantine-color-primary-2);
+      }
+    }
+  }
+  
+  .navLinkBody {
+    gap: rem(12px);
+  }
+  
+  .navLinkLabel {
+    font-size: var(--mantine-font-size-md);
+  }

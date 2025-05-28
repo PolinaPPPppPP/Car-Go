@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог шуб | Дорого Красиво</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/men-catalog.css">
+</head>
+<body>
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__city">
+                        <span class="city-name">Иркутск</span>
+                        <span class="phone">8 (800) 123-45-67</span>
+                    </div>
+                    <div class="header__auth">
+                        <a href="/public/html/favorites.html" class="auth-link"><i class="far fa-heart"></i> Избранное</a>
+                        <a href="/public/html/login.html" class="auth-link"><i class="far fa-user"></i> Вход</a>
+                        <a href="/public/html/cart.html" class="auth-link cart-link"><i class="fas fa-shopping-cart"></i> Корзина <span class="cart-count">0</span></a>
+                    </div>
+                </div> 
+                <div class="header__main">
+                  <div class="header__logo">
+                    <a href="/public/html/index.html" class="logo-link">
+                        <img src="/public/img/Frame 16.svg" alt="Логотип Дорого Красиво" class="logo-image">
+                        <div class="logo-text">
+                            <span class="logo-brand">Д&К</span>
+                            <span class="logo-slogan">Дорого Красиво</span>
+                        </div>
+                    </a>
+                </div>
+                  <nav class="header__nav">
+                    <ul>
+                      <li><a href="#">Женщины</a></li>
+                      <li><a href="/public/html/men-catalog.html">Мужчины</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </header>
+                <!-- Основное содержимое -->
+                <main class="main">
+                    <div class="catalog-container">
+                        <!-- Фильтры слева -->
+                        <aside class="filters-wrapper">
+                            <div class="filters">
+                                <h2 class="filters-title">Фильтры</h2>
+                                
+                                <div class="filter-section active">
+                                    <div class="filter-header">
+                                        <h3 class="filter-title">ЦЕНА</h3>
+                                        <i class="fas fa-chevron-down filter-toggle"></i>
+                                    </div>
+                                    <div class="filter-content">
+                                        <div class="price-filter">
+                                            <div class="price-inputs-container">
+                                                <div class="price-input-wrapper">
+                                                    <input type="text" id="min-price" class="price-input" placeholder="от">
+                                                </div>
+                                                <span class="price-separator">—</span>
+                                                <div class="price-input-wrapper">
+                                                    <input type="text" id="max-price" class="price-input" placeholder="до">
+                                                </div>
+                                            </div>
+                                            <div class="price-slider-container">
+                                                <div id="price-slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            <div class="filter-section">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">МАТЕРИАЛ</h3>
+                                    <i class="fas fa-chevron-down filter-toggle"></i>
+                                </div>
+                                <div class="filter-content">
+                                    <div class="filter-options">
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="material" value="sheepskin coat" checked>
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Дубленка</span>
+                                            <span class="option-count">(128)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="material" value="muton">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Мутон</span>
+                                            <span class="option-count">(56)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="material" value="winter leather jackets">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Зимние кожаные куртки</span>
+                                            <span class="option-count">(34)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="material" value="sheepskin">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Овчина</span>
+                                            <span class="option-count">(42)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="material" value="eco">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Экокожа</span>
+                                            <span class="option-count">(27)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="filter-section">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">ЦВЕТ</h3>
+                                    <i class="fas fa-chevron-down filter-toggle"></i>
+                                </div>
+                                <div class="filter-content">
+                                    <div class="color-options">
+                                        <label class="color-option" style="background-color: #000;" title="Черный">
+                                            <input type="checkbox" name="color" value="black">
+                                            <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                                        </label>
+                                        <label class="color-option" style="background-color: #964B00;" title="Коричневый">
+                                            <input type="checkbox" name="color" value="brown">
+                                            <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                                        </label>
+                                        <label class="color-option" style="background-color: #fff; border: 1px solid #eee;" title="Белый">
+                                            <input type="checkbox" name="color" value="white">
+                                            <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                                        </label>
+                                        <label class="color-option" style="background-color: #C0C0C0;" title="Серебристый">
+                                            <input type="checkbox" name="color" value="silver">
+                                            <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                                        </label>
+                                        <label class="color-option" style="background-color: #FFD700;" title="Золотистый">
+                                            <input type="checkbox" name="color" value="gold">
+                                            <span class="color-checkmark"><i class="fas fa-check"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="filter-section">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">СИЛУЭТ</h3>
+                                    <i class="fas fa-chevron-down filter-toggle"></i>
+                                </div>
+                                <div class="filter-content">
+                                    <div class="filter-options">
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="silhouette" value="straight" checked>
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Прямой</span>
+                                            <span class="option-count">(87)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="silhouette" value="fitted">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Приталенный</span>
+                                            <span class="option-count">(65)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="silhouette" value="oversized">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Оверсайз</span>
+                                            <span class="option-count">(32)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="filter-section">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">ДЛИНА</h3>
+                                    <i class="fas fa-chevron-down filter-toggle"></i>
+                                </div>
+                                <div class="filter-content">
+                                    <div class="filter-options">
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="length" value="short">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Короткая (до бедер)</span>
+                                            <span class="option-count">(54)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="length" value="midi">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Средняя (до колен)</span>
+                                            <span class="option-count">(72)</span>
+                                        </label>
+                                        <label class="filter-checkbox">
+                                            <input type="checkbox" name="length" value="long">
+                                            <span class="checkmark"></span>
+                                            <span class="option-text">Длинная (ниже колен)</span>
+                                            <span class="option-count">(89)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="filter-section">
+                                <div class="filter-header">
+                                    <h3 class="filter-title">РАЗМЕР</h3>
+                                    <i class="fas fa-chevron-down filter-toggle"></i>
+                                </div>
+                                <div class="filter-content">
+                                    <div class="size-options">
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="46">
+                                            <span class="size-box">46</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="48">
+                                            <span class="size-box">48</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="50">
+                                            <span class="size-box">50</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="52">
+                                            <span class="size-box">52</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="54">
+                                            <span class="size-box">54</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="56">
+                                            <span class="size-box">56</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="58">
+                                            <span class="size-box">58</span>
+                                        </label>
+                                        <label class="size-option">
+                                            <input type="checkbox" name="size" value="60">
+                                            <span class="size-box">60</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-actions">
+                                <button class="apply-filters">ПРИМЕНИТЬ ФИЛЬТРЫ</button>
+                                <button class="reset-filters">СБРОСИТЬ ВСЕ</button>
+                            </div>
+                        </div>
+                    </aside>
+            
+                        <!-- Основной контент -->
+                        <div class="products">
+                            <div class="sorting-options">
+                                <span class="sort-label">Сортировка:</span>
+                                <select class="sort-select">
+                                    <option value="popular">По популярности</option>
+                                    <option value="price-asc">По возрастанию цены</option>
+                                    <option value="price-desc">По убыванию цены</option>
+                                    <option value="new">Сначала новые</option>
+                                    <option value="discount">По размеру скидки</option>
+                                </select>
+                                <span class="products-count">Найдено 215 товаров</span>
+                            </div>
+            
+                            <div class="products-grid">
+                                <!-- Карточка товара 1 -->
+                                <a href="/public/html/men-product-detail.html" class="product-card">
+                                    <div class="product-badge">-21%</div>
+                                    <div class="product-image" style="background-image: url('/public/img/men-jacket-111.jpg')"></div>
+                                    <div class="product-info">
+                                        <h3 class="product-title">Куртка из натуральной кожи</h3>
+                                        <div class="product-prices">
+                                            <span class="current-price">54500 ₽</span>
+                                            <span class="old-price">68 990 ₽</span>
+                                        </div>
+                                        <button class="add-to-cart">В корзину</button>
+                                    </div>
+                                </a>
+            
+                                <!-- Карточка товара 2 -->
+                                <a href="/public/html/men-product-detail.html" class="product-card"> 
+                                    <div class="product-image" style="background-image: url('/public/img/men-jacket-11.jpg')"></div>
+                                    <div class="product-info">
+                                        <h3 class="product-title">Дубленка из натуральной кожи с капюшоном</h3>
+                                        <div class="product-prices">
+                                            <span class="current-price">97 990 ₽</span>
+                                        </div>
+                                        <button class="add-to-cart">В корзину</button>
+                                    </div>
+                                </a>
+            
+                                <!-- Карточка товара 3 -->
+                                <a href="/public/html/men-product-detail.html" class="product-card">
+                                    <div class="product-badge">New collection</div>
+                                    <div class="product-image" style="background-image: url('/public/img/sheep.jpg')"></div>
+                                    <div class="product-info">
+                                        <h3 class="product-title">Дубленка из овчины </h3>
+                                        <div class="product-prices">
+                                            <span class="current-price">69 990 ₽</span>
+                                            <span class="old-price">89 990 ₽</span>
+                                        </div>
+                                        <button class="add-to-cart">В корзину</button>
+                                    </div>
+                                </a>
+            
+                                <!-- Остальные карточки товаров -->
+                                <!-- ... -->
+                            </div>
+            
+                            <div class="pagination">
+                                <a href="#" class="page-link active">1</a>
+                                <a href="#" class="page-link">2</a>
+                                <a href="#" class="page-link">3</a>
+                                <a href="#" class="page-link">4</a>
+                                <a href="#" class="page-link">5</a>
+                                <a href="#" class="page-link next">Следующая <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            
+                <!-- Подвал сайта -->
+                <footer class="footer">
+                  <div class="container">
+                    <div class="footer__grid">
+                      <!-- Женщинам -->
+                      <div class="footer__section">
+                        <h3 class="footer__title">Мужчинам</h3>
+                        <ul class="footer__list">
+                          <li><a href="#">Шубы из меха норки</a></li>
+                          <li><a href="#">Шубы из овчины</a></li>
+                          <li><a href="#">Экошубы</a></li>
+                        </ul>
+                      </div>
+                      
+                      <!-- Мужчинам -->
+                      <div class="footer__section">
+                        <h3 class="footer__title">Мужчинам</h3>
+                        <ul class="footer__list">
+                          <li><a href="#">Дублёнки</a></li>
+                          <li><a href="#">Кожаные куртки</a></li>
+                          <li><a href="#">Пуховики</a></li>
+                        </ul>
+                      </div>
+                      
+                      <!-- Компания -->
+                      <div class="footer__section">
+                        <h3 class="footer__title">Компания</h3>
+                        <ul class="footer__list">
+                          <li><a href="about-page.html">О компании</a></li>
+                          <li><a href="/public/html/contacts.html">Контакты</a></li>
+                        </ul>
+                      </div>
+                      
+                      <!-- Плюсы -->
+                      <div class="footer__section">
+                        <h3 class="footer__title">Плюсы</h3>
+                        <ul class="footer__list">
+                          <li><a href="#">Распродажа</a></li>
+                          <li><a href="/public/html/favorites.html">Избранное</a></li>
+                          <li><a href="/public/html/login.html">Личный кабинет</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div class="footer__bottom">
+                      <div class="footer__copyright">
+                        © 2016–2025 «D&K»<br>
+                        <span class="footer__note">[Политика конфиденциальности]</span>
+                        <div class="social-media">
+                            <h4>Мы в соцсетях</h4>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-vk"></i></a>
+                                <a href="#"><i class="fab fa-viber"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-odnoklassniki"></i></a>
+                            </div>
+                        </div>
+                    </div>
+            
+                      <div class="footer__contacts">
+                        <div class="footer__phone">8 (800) 600-46-46<br>
+                        <span>Бесплатно по России</span></div>
+                        
+                        <div class="footer__email">
+                          <strong>DorogoKrasivo@gmail.com</strong><br>
+                          <span>По всем вопросам</span>
+                        </div>
+                      </div>
+                      
+                      <div class="footer__legal">
+                        <p><strong>Примечание:</strong></p>
+                        <ul class="footer__legal-list">
+                            <li>Оплата банковскими картами осуществляется через АО "Альфа-Банк".</li>
+                            <li>К оплате принимаются карты Платженая система "Мир".</li>
+                        </ul>
+                        <div class="payment-methods">
+                            <p>Принимаем к оплате:</p>
+                            <div class="payment-icons">
+                                <img src="/public/img/sber.jpg" alt="Cбербанк">
+                                <img src="/public/img/SPB.jpg" alt="СБП">
+                                <img src="/public/img/mir.jpg" alt="МИР">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </footer>
+                <script>
+                    // Раскрывающиеся фильтры
+                    document.querySelectorAll('.filter-header').forEach(header => {
+                        header.addEventListener('click', () => {
+                            const section = header.parentElement;
+                            section.classList.toggle('active');
+                            const icon = header.querySelector('.filter-toggle');
+                            icon.classList.toggle('fa-chevron-down');
+                            icon.classList.toggle('fa-chevron-up');
+                        });
+                    });
+            
+                    // Добавление товара в корзину
+                    document.querySelectorAll('.add-to-cart').forEach(button => {
+                        button.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            
+                            // Получаем информацию о товаре
+                            const card = this.closest('.product-card');
+                            const title = card.querySelector('.product-title').textContent;
+                            const price = card.querySelector('.current-price').textContent;
+                            const oldPrice = card.querySelector('.old-price')?.textContent;
+                            const image = card.querySelector('.product-image').style.backgroundImage;
+                            
+                            // Здесь должна быть логика добавления в корзину
+                            console.log(`Добавлен товар: ${title}, Цена: ${price}`);
+                            
+                            // Обновляем счетчик корзины
+                            const cartCount = document.querySelector('.cart-count');
+                            let count = parseInt(cartCount.textContent) || 0;
+                            cartCount.textContent = count + 1;
+                            
+                            // Анимация добавления
+                            this.textContent = 'Добавлено!';
+                            this.classList.add('added');
+                            setTimeout(() => {
+                                this.textContent = 'В корзину';
+                                this.classList.remove('added');
+                            }, 2000);
+                        });
+                    });
+            
+                    // Фильтрация товаров (заглушка)
+                    document.querySelector('.apply-filters').addEventListener('click', () => {
+                        console.log('Фильтры применены');
+                        // Здесь должна быть логика фильтрации
+                    });
+            
+                    // Сброс фильтров
+                    document.querySelector('.reset-filters').addEventListener('click', () => {
+                        document.querySelectorAll('.filter-content input').forEach(input => {
+                            if (input.type === 'checkbox') input.checked = false;
+                            if (input.type === 'number') {
+                                if (input.classList.contains('price-input')) {
+                                    input.value = input.placeholder === 'от' ? '39900' : '1379490';
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css">
+                <script>
+                     document.addEventListener('DOMContentLoaded', function() {
+        const priceSlider = document.getElementById('price-slider');
+        const minPriceInput = document.getElementById('min-price');
+        const maxPriceInput = document.getElementById('max-price');
+
+        // Форматирование чисел
+        const formatPrice = (value) => {
+            return new Intl.NumberFormat('ru-RU', {
+                maximumFractionDigits: 0
+            }).format(value);
+        };
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        const priceSlider = document.getElementById('price-slider');
+        const minPriceInput = document.getElementById('min-price');
+        const maxPriceInput = document.getElementById('max-price');
+        
+        // Форматирование чисел
+        const formatPrice = (value) => {
+            return new Intl.NumberFormat('ru-RU', {
+                maximumFractionDigits: 0
+            }).format(value);
+        };
+        
+        // Инициализация слайдера
+        noUiSlider.create(priceSlider, {
+            start: [39900, 1379490],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 2000000
+            },
+            step: 1000,
+            behaviour: 'tap-drag',
+            cssPrefix: 'noUi-',
+            format: {
+                to: function(value) {
+                    return Math.round(value);
+                },
+                from: function(value) {
+                    return Number(value);
+                }
+            }
+        });
+        
+        // Обновление полей ввода
+        priceSlider.noUiSlider.on('update', function(values, handle) {
+            const value = values[handle];
+            const formattedValue = formatPrice(value);
+            
+            if (handle) {
+                maxPriceInput.value = formattedValue;
+            } else {
+                minPriceInput.value = formattedValue;
+            }
+        });
+        
+        // Установка начальных значений
+        minPriceInput.value = formatPrice(39900);
+        maxPriceInput.value = formatPrice(1379490);
+    });
+  });
+                
+                    // Функциональная сортировка
+                    const sortSelect = document.querySelector('.sort-select');
+                    const productsGrid = document.querySelector('.products-grid');
+                    const productCards = Array.from(document.querySelectorAll('.product-card'));
+                
+                    sortSelect.addEventListener('change', function() {
+                        const sortValue = this.value;
+                        
+                        productCards.sort((a, b) => {
+                            const priceA = parseInt(a.querySelector('.current-price').textContent.replace(/\D/g, ''));
+                            const priceB = parseInt(b.querySelector('.current-price').textContent.replace(/\D/g, ''));
+                            const discountA = a.querySelector('.old-price') ? 
+                                parseInt(a.querySelector('.old-price').textContent.replace(/\D/g, '')) - priceA : 0;
+                            const discountB = b.querySelector('.old-price') ? 
+                                parseInt(b.querySelector('.old-price').textContent.replace(/\D/g, '')) - priceB : 0;
+                            
+                            switch(sortValue) {
+                                case 'price-asc':
+                                    return priceA - priceB;
+                                case 'price-desc':
+                                    return priceB - priceA;
+                                case 'discount':
+                                    return discountB - discountA;
+                                case 'new':
+                                    // Здесь должна быть логика сортировки по новизне
+                                    return 0;
+                                default: // popular
+                                    return 0;
+                            }
+                        });
+                
+                        // Очищаем и пересобираем grid
+                        productsGrid.innerHTML = '';
+                        productCards.forEach(card => {
+                            productsGrid.appendChild(card);
+                        });
+                    });
+                
+                    // Фильтрация товаров (примерная реализация)
+                    document.querySelector('.apply-filters').addEventListener('click', function() {
+                        const minPrice = parseInt(minPriceInput.value.replace(/\D/g, ''));
+                        const maxPrice = parseInt(maxPriceInput.value.replace(/\D/g, ''));
+                        const selectedMaterials = Array.from(document.querySelectorAll('input[name="material"]:checked')).map(el => el.value);
+                        
+                        productCards.forEach(card => {
+                            const price = parseInt(card.querySelector('.current-price').textContent.replace(/\D/g, ''));
+                            const material = card.getAttribute('data-material'); // Добавьте data-атрибуты к карточкам
+                            
+                            const priceMatch = price >= minPrice && price <= maxPrice;
+                            const materialMatch = selectedMaterials.length === 0 || selectedMaterials.includes(material);
+                            
+                            card.style.display = priceMatch && materialMatch ? 'block' : 'none';
+                        });
+                    });
+                </script>
+            </body>
+            </html>
+    <script src="js/script.js"></script>
+</body>
+</html>
